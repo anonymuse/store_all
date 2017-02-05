@@ -36,6 +36,15 @@ smartctl -t long /dev/ada3
 smartctl -t long /dev/ada4
 smartctl -t long /dev/ada5
 
+# Check the results
+smartctl -a /dev/ada0
+smartctl -a /dev/ada1
+smartctl -a /dev/ada2
+smartctl -a /dev/ada3
+smartctl -a /dev/ada4
+smartctl -a /dev/ada5
+
+
 # Enable kernel geoometry flags
 sysctl kern.geom.debugflags=0x10
 
