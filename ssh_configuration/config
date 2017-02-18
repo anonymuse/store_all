@@ -1,0 +1,4 @@
+Host github
+  User git
+  HostName github.com
+  IdentityFile /mnt/r0_superbyte/root/.ssh/freenas_id_rsa
