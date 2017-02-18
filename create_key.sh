@@ -6,4 +6,7 @@
 # -f %KEYNAME% tells the script where to store the file
 # yes "y" sends an enter style return to the prompts
 
-yes "y" | ssh-keygen -t rsa -b 4096 -N "" -f $HOME/.ssh/freenas_id_rsa
+BITS=4096
+KEYPATH=/mnt/r0_superbyte/root/.ssh/freenas_id_rsa
+
+yes "y" | ssh-keygen -t rsa -b $BITS -N "" -f $KEYPATH
